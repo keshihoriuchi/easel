@@ -35,6 +35,7 @@
   name = "gopkg.in/fsnotify.v1"
   packages = ["."]
   revision = "c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9"
+  source = "git@github.com:fsnotify/fsnotify"
   version = "v1.4.7"
 
 [[projects]]
@@ -46,6 +47,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f7cfd30f6cd2830855f56484886a3971aaecc06ebcaf40a8ec25de9582cdf0e6"
+  inputs-digest = "1554bbfe6d67361ea967ac56d9f973493375387c3df4718bf783ac4ef5389ec6"
   solver-name = "gps-cdcl"
   solver-version = 1

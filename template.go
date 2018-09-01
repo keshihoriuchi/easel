@@ -45,7 +45,7 @@ const TEMPLATE_CANVAS = `
         {{ .CUSTOMERSEGMENTS }}
       </div>
     </div>
-    <div class="row">
+    <div class="row under-raw">
       <div class="content">
         <h1>コスト構造</h1>
         {{ .COSTSTRUCTURE }}
@@ -75,8 +75,9 @@ body{padding:15px;color:#333;word-break:break-all}
 .row:first-child > div{width:20%}
 .row:last-child > div{width:50%}
 .col{display:flex;flex-direction:column}
-.col > div{flex: 1 0 100px}
+.col > div{flex: 1 0 30vh}
 .content{padding:10px;border-right:2px solid #666;border-bottom:2px solid #666}
+.under-raw{height:30vh}
 </style>
 {{ end }}`
 

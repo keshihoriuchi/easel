@@ -13,45 +13,45 @@ const TEMPLATE_CANVAS = `
   <div class="wrap">
     <div class="row">
       <div class="content">
-        <h1>PROBLEM</h1>
+        <h1>課題</h1>
         {{ .PROBLEM }}
       </div>
       <div class="col">
         <div class="content">
-          <h1>SOLUTION</h1>
+          <h1>ソリューション</h1>
           {{ .SOLUTION }}
         </div>
         <div class="content">
-          <h1>KEY METRICS</h1>
+          <h1>主要指標</h1>
           {{ .KEYMETRICS }}
         </div>
       </div>
       <div class="content">
-        <h1>UNIQUE VALUE PROPOSITION</h1>
+        <h1>独自の価値提案</h1>
         {{ .UNIQUEVALUEPROPOSITION }}
       </div>
       <div class="col">
         <div class="content">
-          <h1>UNFAIR ADVANTAGE</h1>
+          <h1>圧倒的な優位性</h1>
           {{ .UNFAIRADVANTAGE }}
         </div>
         <div class="content">
-          <h1>CHANNELS</h1>
+          <h1>チャネル</h1>
           {{ .CHANNELS }}
         </div>
       </div>
       <div class="content">
-        <h1>CUSTOMER SEGMENTS</h1>
+        <h1>顧客セグメント</h1>
         {{ .CUSTOMERSEGMENTS }}
       </div>
     </div>
     <div class="row">
       <div class="content">
-        <h1>COST STRUCTURE</h1>
+        <h1>コスト構造</h1>
         {{ .COSTSTRUCTURE }}
       </div>
       <div class="content">
-        <h1>REVENUE STREAMS</h1>
+        <h1>収益の流れ</h1>
         {{ .REVENUESTREAMS }}
       </div>
     </div>

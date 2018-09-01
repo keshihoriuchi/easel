@@ -10,7 +10,29 @@ import (
 
 func getTitle(html []byte) string {
 	r := regexp.MustCompile("<h1>(.*)</h1>")
-	return strings.Replace(r.FindStringSubmatch(string(html))[1], " ", "", -1)
+	s := strings.Replace(r.FindStringSubmatch(string(html))[1], " ", "", -1)
+	switch s {
+	case "課題":
+		s = "PROBLEM"
+	case "ソリューション":
+		s = "SOLUTION"
+	case "主要指標":
+		s = "KEYMETRICS"
+	case "独自の価値提案":
+		s = "UNIQUEVALUEPROPOSITION"
+	case "圧倒的な優位性":
+		s = "UNFAIRADVANTAGE"
+	case "チャネル":
+		s = "CHANNELS"
+	case "顧客セグメント":
+		s = "CUSTOMERSEGMENTS"
+	case "コスト構造":
+		s = "COSTSTRUCTURE"
+	case "収益の流れ":
+		s = "REVENUESTREAMS"
+	}
+
+	return s
 }
 
 func getContent(html []byte) string {
@@ -19,7 +41,7 @@ func getContent(html []byte) string {
 }
 
 func getCanvasMap(html []byte) map[string]string {
-	r := regexp.MustCompile("<h1>(\\w|\\s)*</h1>")
+	r := regexp.MustCompile("<h1>.*</h1>")
 	index := r.FindAllIndex(html, -1)
 
 	m := map[string]string{}

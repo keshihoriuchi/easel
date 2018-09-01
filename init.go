@@ -25,51 +25,50 @@ func runInit(args []string) int {
 		return 1
 	}
 
-	base := `# PROBLEM
+	base := `# 課題
+
+上位3つの課題
+
+## 別の解決手段
 
 
 
-## EXISTING ALTERNATIVES
+# 顧客セグメント
+
+
+## アーリーアダプター
+
+
+# 独自の価値提案
 
 
 
-# CUSTOMER SEGMENTS
+## ハイレベルコンセプト
 
 
 
-## EARLY ADOPTERS
+# ソリューション
+
+上位3つの機能
+
+# チャネル
 
 
 
-# UNIQUE VALUE PROPOSITION
+# 収益の流れ
 
 
 
-## HIGH-LEVEL CONCEPT
+# コスト構造
 
 
 
-# SOLUTION
+# 主要指標
 
 
 
-# CHANNELS
+# 圧倒的な優位性
 
-
-
-# REVENUE STREAMS
-
-
-
-# COST STRUCTURE
-
-
-
-# KEY METRICS
-
-
-
-# UNFAIR ADVANTAGE
 
 
 
